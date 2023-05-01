@@ -55,7 +55,6 @@ header {
   align-items: center;
   padding: 25px 100px;
   box-shadow: 0 11px 11px rgba(0, 0, 0, 0.1);
-  /* text-align: center; */
 }
 header .logo a {
   color: var(--main-color);
@@ -83,13 +82,8 @@ header .nav-menu a {
   align-items: center;
   flex-wrap: wrap;
   height: 70%;
-  /* padding-top: 80px; */
   justify-content: space-around;
   border: 1px solid black;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; */
 }
 .left-data h3 {
   color: var(--main-color);
@@ -104,13 +98,6 @@ header .nav-menu a {
 }
 .home .row-2 {
   border: 1px solid black;
-  /* text-align: center; */
-  /* height: 30%; */
-  /* padding-top: 60px; */
-  /* position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0; */
   width: 100%;
   text-align: center;
   padding: 30px 0;
@@ -125,32 +112,32 @@ header .nav-menu a {
 }
 .about .title {
   text-align: center;
-  height: 200px;
-  position: relative;
+  height: 150px;
 }
 .about .title h1 {
   font-size: 90px;
+  -webkit-text-stroke: 0.1rem black;
+  color: transparent;
   opacity: 0.5;
   font-family: sans-serif;
+  position: relative;
 }
-.about .title:before {
-  content: "Why Choos Us";
+.about .title span {
   font-size: 45px;
   color: black;
   font-weight: bold;
   position: absolute;
   top: 15px;
-  left: 38%;
+  left: 37%;
 }
 .ab1 {
-  /* width: 40%; */
 }
 .ab2 {
+  padding-left: 50px;
   width: 60%;
 }
 .ab1 img {
   margin: auto;
-  height: 500px;
   width: 500px;
 }
 .about .ab2 {
@@ -158,15 +145,18 @@ header .nav-menu a {
 .about .ab2 h4 {
   color: #444433;
   font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .about .ab2 p {
   color: #444433;
   font-size: 18px;
+  margin-bottom: 30px;
 }
-.about .ab2 .btn {
+.about .ab2 a {
   color: #444433;
-
   border: 2px solid black;
+  margin-bottom: 30px;
 }
 .row {
   display: flex;
@@ -175,8 +165,8 @@ header .nav-menu a {
 .box {
   border: 2px solid black;
   width: 30%;
-  align-items: start;
   text-align: center;
+  margin: auto;
 }
 .menu {
   background-image: url("../images/menu-bg.jpg");
@@ -184,24 +174,25 @@ header .nav-menu a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.menu .menu-title {
+.menu .title {
   text-align: center;
-  height: 200px;
+  height: 150px;
+}
+.menu .title h1 {
+  font-size: 90px;
+  -webkit-text-stroke: 0.1rem black;
+  color: transparent;
+  opacity: 0.5;
+  font-family: sans-serif;
   position: relative;
 }
-.menu .menu-title:before {
-  content: "Popular Menu";
+.menu .title span {
   font-size: 45px;
   color: black;
   font-weight: bold;
   position: absolute;
   top: 15px;
-  left: 38%;
-}
-.menu .menu-title h1 {
-  font-size: 90px;
-  opacity: 0.5;
-  font-family: sans-serif;
+  left: 37%;
 }
 .menu-body {
   display: flex;
@@ -218,6 +209,7 @@ header .nav-menu a {
 .menu-box:hover {
   border: var(--border-hover);
   border-radius: var(--border-radius-hover);
+  transition: 0.2s;
 }
 .menu-box .menu-image img {
   height: 80px;
