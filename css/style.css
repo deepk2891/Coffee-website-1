@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
   --main-color: #443;
-  --border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
-  --border-radius-hover: 4% 95% 6% 95%/95% 4% 92% 5%;
+  --border-radius: 10%/50%;
+  --border-radius-hover: 20%/60%;
   --border: 2.5px solid var(--main-color);
   --border-hover: 2.5px dashed var(--main-color);
 }
@@ -12,14 +12,24 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  scroll-behavior: smooth;
 }
 .container {
   max-width: 1320px;
   margin: auto;
 }
-
+.mt50 {
+  margin: 50px 0;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .all-btn {
   font-size: 18px;
   padding: 8px;
@@ -63,7 +73,6 @@ header .nav-menu a {
 .home {
   min-height: 90vh;
   width: 100%;
-  position: relative;
   background-image: url("../images/home-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -110,37 +119,94 @@ header .nav-menu a {
   height: 90px;
   width: 90px;
 }
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about .title {
+  text-align: center;
+  height: 200px;
+  position: relative;
+}
+.about .title h1 {
+  font-size: 90px;
+  opacity: 0.5;
+  font-family: sans-serif;
+}
+.about .title:before {
+  content: "Why Choos Us";
+  font-size: 45px;
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  left: 38%;
+}
+.ab1 {
+  /* width: 40%; */
+}
+.ab2 {
+  width: 60%;
+}
+.ab1 img {
+  margin: auto;
+  height: 500px;
+  width: 500px;
+}
+.about .ab2 {
+}
+.about .ab2 h4 {
+  color: #444433;
+  font-size: 36px;
+}
+.about .ab2 p {
+  color: #444433;
+  font-size: 18px;
+}
+.about .ab2 .btn {
+  color: #444433;
+
+  border: 2px solid black;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  border: 2px solid black;
+  width: 30%;
+  align-items: start;
+  text-align: center;
+}
 .menu {
   background-image: url("../images/menu-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.menu .container {
+.menu .menu-title {
+  text-align: center;
+  height: 200px;
+  position: relative;
+}
+.menu .menu-title:before {
+  content: "Popular Menu";
+  font-size: 45px;
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  left: 38%;
+}
+.menu .menu-title h1 {
+  font-size: 90px;
+  opacity: 0.5;
+  font-family: sans-serif;
+}
+.menu-body {
   display: flex;
   flex-wrap: wrap;
 }
-.menu-head {
-  padding: 20px 0;
-  text-align: center;
-}
-
-.menu-head h2 {
-  font-size: 6rem;
-  color: transparent;
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px #303132;
-  position: relative;
-}
-
-.menu-head h2 span {
-  font-size: 2rem;
-  color: #303132;
-  position: absolute;
-  top: 35%;
-  left: 40%;
-}
-
 .menu-box {
   display: flex;
   width: 45%;
