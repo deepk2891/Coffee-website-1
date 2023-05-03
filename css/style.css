@@ -42,6 +42,9 @@ body {
   border: var(--border-hover);
   border-radius: var(--border-radius-hover);
 }
+
+/* <!------------------------ HEADER ------------------------> */
+
 header {
   height: 10vh;
   position: sticky;
@@ -69,6 +72,11 @@ header .nav-menu a {
   font-size: 18px;
   font-weight: lighter;
 }
+
+/* <!------------------------ /HEADER ------------------------> */
+
+/* <!------------------------ HOME ------------------------> */
+
 .home {
   min-height: 90vh;
   width: 100%;
@@ -106,6 +114,11 @@ header .nav-menu a {
   height: 90px;
   width: 90px;
 }
+
+/* <!------------------------ /HOME ------------------------> */
+
+/* <!------------------------ ABOUT ------------------------> */
+
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -130,8 +143,8 @@ header .nav-menu a {
   top: 15px;
   left: 37%;
 }
-.ab1 {
-}
+/* .ab1 {
+} */
 .ab2 {
   padding-left: 50px;
   width: 60%;
@@ -140,8 +153,8 @@ header .nav-menu a {
   margin: auto;
   width: 500px;
 }
-.about .ab2 {
-}
+/* .about .ab2 {
+} */
 .about .ab2 h4 {
   color: #444433;
   font-size: 36px;
@@ -168,6 +181,11 @@ header .nav-menu a {
   text-align: center;
   margin: auto;
 }
+
+/* <!------------------------ /ABOUT ------------------------> */
+
+/* <!------------------------ MENU ------------------------> */
+
 .menu {
   background-image: url("../images/menu-bg.jpg");
   background-position: center;
@@ -238,3 +256,5 @@ header .nav-menu a {
   line-height: 1.8;
   font-weight: 400;
 }
+
+/* <!------------------------ /MENU ------------------------> */
