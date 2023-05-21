@@ -218,7 +218,7 @@ header .btn {
   line-height: 12rem;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 0.1rem var(--main-color);
+  -webkit-text-stroke: 0.05rem var(--main-color);
   font-weight: 500;
   letter-spacing: 0.2rem;
   position: relative;
@@ -275,7 +275,7 @@ header .btn {
   line-height: 12rem;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 0.1rem var(--main-color);
+  -webkit-text-stroke: 0.05rem var(--main-color);
   font-weight: 500;
   letter-spacing: 0.2rem;
   position: relative;
@@ -349,3 +349,33 @@ header .btn {
   bottom: -4rem;
 }
 /* ------------------------REVIEW ENDS HERE----------------------- */
+/* ------------------------BOOK STARTS HERE----------------------- */
+.book {
+  background-image: url(../images/book-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.book-heading span {
+  font-size: 10rem;
+  line-height: 12rem;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 0.05rem var(--main-color);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  position: relative;
+  pointer-events: none;
+}
+.book-heading span::before {
+  content: "Reserve a table";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-weight: 500;
+  color: var(--main-color);
+  font-size: 3.5rem;
+}
+
+/* ------------------------BOOK ENDS HERE----------------------- */
