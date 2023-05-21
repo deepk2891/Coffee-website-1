@@ -269,3 +269,27 @@ header .btn {
   border-radius: var(--border-radius-hover);
 }
 /* ------------------------MENU ENDS HERE----------------------- */
+/* ------------------------REVIEW STARTS HERE----------------------- */
+.review-heading span {
+  font-size: 10rem;
+  line-height: 12rem;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem var(--main-color);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  position: relative;
+  pointer-events: none;
+}
+.review-heading span::before {
+  content: "What people says";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-weight: 500;
+  color: var(--main-color);
+  font-size: 3.5rem;
+}
+/* ------------------------REVIEW ENDS HERE----------------------- */
