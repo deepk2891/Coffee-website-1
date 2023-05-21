@@ -207,3 +207,30 @@ header .btn {
 }
 
 /* ------------------------ABOUT-BANNER ENDS HERE----------------------- */
+/* ------------------------MENU STARTS HERE----------------------- */
+.menu {
+  background-image: url(../images/menu-bg.jpg);
+}
+.menu-heading span {
+  font-size: 10rem;
+  line-height: 12rem;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem var(--main-color);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  position: relative;
+  pointer-events: none;
+}
+.menu-heading span::before {
+  content: "Popular menu";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-weight: 500;
+  color: var(--main-color);
+  font-size: 3.5rem;
+}
+/* ------------------------MENU ENDS HERE----------------------- */
