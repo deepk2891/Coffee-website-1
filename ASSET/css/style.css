@@ -14,7 +14,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
   text-transform: capitalize;
+  text-decoration: none;
   transition: all 0.2s linear;
 }
 .container {
@@ -27,7 +29,7 @@ html {
   scroll-behavior: smooth;
 }
 section {
-  padding: 60px 0;
+  padding: 6rem 0;
 }
 .btn-main {
   text-align: center;
@@ -37,7 +39,14 @@ section {
   display: inline-block;
   text-decoration: none;
   font-size: 18px;
-  padding: 13px 40px;
+  padding: 0.9rem 1.5rem;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--main-color);
+}
+.btn:hover {
+  border-radius: var(--border-radius-hover);
+  border: var(--border-hover);
 }
 .col-1,
 .col-2,
@@ -52,4 +61,33 @@ section {
 .col-11,
 .col-12 {
   padding: 0 var(--gutter-width);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 0;
+  z-index: 1000;
+}
+header .logo {
+  color: var(--main-color);
+  font-size: 2.3rem;
+}
+/* header .logo::after {
+  content: "\f7b6";
+  font-family: fontAwesome;
+} */
+header .logo i {
+  padding-left: 0.5rem;
+}
+header nav a {
+  margin: 0 1rem;
+  font-size: 1.7rem;
+  color: var(--main-color);
+}
+header .btn {
+  margin-top: 0;
 }
