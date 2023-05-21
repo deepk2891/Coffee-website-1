@@ -63,12 +63,12 @@ section {
   padding: 0 var(--gutter-width);
 }
 
+/* ------------------------HEADER STARTS HERE----------------------- */
 header {
   position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: white;
   padding: 2rem 0;
   z-index: 1000;
 }
@@ -91,3 +91,43 @@ header nav a {
 header .btn {
   margin-top: 0;
 }
+/* ------------------------HEADER ENDS HERE----------------------- */
+/* ------------------------MAIN-BANNER STARTS HERE----------------------- */
+.main-banner {
+  background-image: url(../images/home-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-banner-image {
+  height: 35rem;
+  animation: 4s linear 0s infinite normal none running float;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-7rem);
+  }
+}
+.main-top {
+  padding-top: 8rem;
+}
+.img3 {
+  padding: 70px 0 0 0;
+}
+.img3 img {
+  width: 80px;
+  height: 70px;
+}
+.main-banner .content {
+  padding-left: 4rem;
+}
+.main-banner .content h3 {
+  font-size: 6.5rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+/* ------------------------MAIN-BANNER ENDS HERE----------------------- */
