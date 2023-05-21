@@ -210,6 +210,8 @@ header .btn {
 /* ------------------------MENU STARTS HERE----------------------- */
 .menu {
   background-image: url(../images/menu-bg.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .menu-heading span {
   font-size: 10rem;
@@ -232,5 +234,38 @@ header .btn {
   font-weight: 500;
   color: var(--main-color);
   font-size: 3.5rem;
+}
+.menu-card .menu-img {
+  height: 8rem;
+  margin-left: -6rem;
+}
+.menu-card .menu-desc h3 {
+  font-size: 2.2rem;
+  color: var(--main-color);
+  line-height: 1.8;
+}
+.menu-card .menu-desc p {
+  font-size: 1.6rem;
+  color: var(--main-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+.menu-card .menu-desc span {
+  font-size: 2rem;
+  color: var(--main-color);
+  line-height: 1.8;
+}
+.menu .menu-card {
+  padding: 2rem;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0 2rem 6rem;
+}
+.menu .menu-card:hover {
+  border: var(--border-hover);
+  border-radius: var(--border-radius-hover);
 }
 /* ------------------------MENU ENDS HERE----------------------- */
