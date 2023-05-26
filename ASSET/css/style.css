@@ -90,6 +90,17 @@ header nav a {
 header .btn {
   margin-top: 0;
 }
+nav {
+  display: block;
+}
+header .btn {
+  display: block;
+}
+.bar {
+  display: none;
+  font-size: 30px;
+  color: black;
+}
 /* ------------------------HEADER ENDS HERE----------------------- */
 /* ------------------------MAIN-BANNER STARTS HERE----------------------- */
 .main-banner {
