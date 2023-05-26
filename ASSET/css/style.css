@@ -96,7 +96,7 @@ header .btn {
   background-image: url(../images/home-bg.jpg);
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  min-height: 90vh;
 }
 .main-banner-image {
   height: 35rem;
@@ -262,7 +262,7 @@ header .btn {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin: 2rem 0 2rem 6rem;
+  margin: 2rem 0 2rem 3rem;
 }
 .menu .menu-card:hover {
   border: var(--border-hover);
