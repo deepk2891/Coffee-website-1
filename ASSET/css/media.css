@@ -132,7 +132,7 @@
     margin: 0 auto;
   }
   section {
-    padding: 3rem;
+    padding: 3rem 0;
   }
 }
 
@@ -251,8 +251,9 @@
     display: none;
   }
   .about .heading span {
-    font-size: 1rem;
-    line-height: 3rem;
+    font-size: 6rem;
+    color: var(--main-color);
+    line-height: 6rem;
   }
   .about .content .title {
     font-size: 2.5rem;
@@ -261,6 +262,20 @@
   .about .content .icons-container .icons {
     padding: 0.5rem 1rem;
     margin-right: 0rem;
+  }
+  .menu .menu-img {
+    display: none;
+  }
+  .menu .menu-card {
+    display: block;
+    margin: 2rem;
+  }
+  .menu .menu-heading span::before {
+    display: none;
+  }
+  .menu .menu-heading span {
+    font-size: 6rem;
+    color: var(--main-color);
   }
 }
 
