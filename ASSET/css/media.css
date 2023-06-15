@@ -186,6 +186,9 @@
   header .btn {
     display: none;
   }
+  .review-card {
+    margin: 20px 0;
+  }
 }
 
 @media (max-width: 576px) {
